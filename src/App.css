@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+
+}
+.game-container{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149161561.jpg?t=st=1720073618~exp=1720077218~hmac=562c94d60913931e3cbb2646af5d8ca92c4e317a53378f2cecc7b937c6fc111e&w=740");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:brown;
+}
+.start-button-container{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#startButton {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+#startButton:hover{
+  background-color: yellowgreen;
+}
+.game-info{
+  text-align: center;
+  margin-bottom: 10px;
+  color: purple;
+}
+.game-board {
+  margin: 20px auto;
+  position: relative;
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  background: rgba(255, 192, 203, 0.5);  /* Blue background with transparency */
+  backdrop-filter: blur(10px); /* Blurring effect for the glass look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  overflow: hidden; /*Ensure content does not overflow*/
+  border-radius: 10px; /* Optional: Rounded corners for a smoother look */
+}
+.game-info span {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.game-info span:last-child {
+  margin-right: 0;
+}
+.game-won-message{
+  color: orangered;
+}
+#pauseButton{
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
